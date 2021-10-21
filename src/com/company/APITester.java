@@ -16,10 +16,10 @@ public class APITester {
         try {
             HttpRequest request = HttpRequest.newBuilder()
                     .GET()
-                    .uri(URI.create("https://www.google.com"))
+                    .uri(URI.create("https://www.google.com")) //requiere una url
                     .build();
-            HttpResponse<String> response = httpClient.send(request,
-                    HttpResponse.BodyHandlers.ofString());
+
+            HttpResponse<String> response = httpClient.send(request,HttpResponse.BodyHandlers.ofString());
 
             System.out.println("Status code: " + response.statusCode());
             System.out.println("Headers: " + response.headers().allValues("content-type"));
@@ -29,3 +29,19 @@ public class APITester {
         }
     }
 }
+
+/***
+ * Cree una instancia de HttpClient usando la instancia de HttpClient.newBuilder ()
+ *
+ * Cree una instancia de HttpRequest utilizando la instancia de HttpRequest.newBuilder ()
+ *
+ * Realice una solicitud usando httpClient.send () y obtenga un objeto de respuesta.
+ */
+
+
+/***
+ * Nueva forma de ejecutar el archivo
+ * $ java APITester.java
+ * Hello World!
+ */
+
