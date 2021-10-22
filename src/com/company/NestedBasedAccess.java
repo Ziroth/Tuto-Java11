@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class NestedBasedAccess {
     public static void main(String[] args) {
-        boolean isNestMate = APITester.class.isNestmateOf(APITester.Inner.class);
+     /*   boolean isNestMate = APITester.class.isNestmateOf(APITester.Inner.class);
         boolean nestHost = APITester.Inner.class.getNestHost() == APITester.class;
 
 
@@ -19,8 +19,12 @@ public class NestedBasedAccess {
                 .collect(Collectors.toSet());
         System.out.println(nestedMembers);
     }
-    public class Inner{}
-}
+    public class Inner{}*/
+    }
+}//eliminar
+
+
+
 
 /****
  * Java 11 introdujo un concepto de clase anidada donde podemos declarar una clase dentro de una clase. Este anidamiento de clases permite agrupar lógicamente las clases que se utilizarán en un solo lugar, haciéndolas más legibles y fáciles de mantener. La clase anidada puede ser de cuatro tipos:
